@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.transmobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.media.action.IMAGE_CAPTURE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Entradas.DeviceListActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog">
+        </activity>
+        <activity android:name=".Inventario.InventarioActivity2" />
+        <activity android:name=".Reimpresion.ReimpresionActivity" />
+        <activity android:name=".Inventario.InventarioActivity" />
+        <activity android:name=".Entradas.EntradaActivity" />
+        <activity android:name=".Excepciones.ConExepcionActivity" />
+        <activity android:name=".Excepciones.FotosActivity" />
+        <activity android:name=".Excepciones.ExcepcionesActivity" />
+        <activity android:name=".Salida.SalidaAuto" />
+        <activity android:name=".Transferencia.Transferencia_Menu" />
+        <activity android:name=".Salida.SalidaActivity" />
+        <activity
+            android:name=".Salida.Home2"
+            android:label="@string/title_activity_home2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Home.Home" />
+        <activity android:name=".Salida.Busqueda" />
+        <activity android:name=".Login.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest>

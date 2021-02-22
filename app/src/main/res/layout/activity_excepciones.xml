@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Excepciones.ExcepcionesActivity">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revisión de"
+        android:textColor="#FF9800"
+        android:textSize="30dp"
+        android:textStyle="bold|italic">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:text="Autos"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimaryDark">
+    </TextView>
+
+
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextChasis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese VIN o Chasis..." />
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dashboard de Autos"
+                        android:layout_marginLeft="8dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#d11b0b">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <!--                       AUTOS POR REVISION                   -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="8dp">
+
+                            <TextView
+                                android:id="@+id/tvAutoPorRevisar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="351"
+                                android:textSize="24dp"
+                                android:textColor="#64A2E3"
+                                android:textStyle="bold|italic"></TextView>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#c3cfdc"
+                                android:textStyle="bold"
+                                android:text="Por Revisar">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <!--                        DIVIDER-->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="|"
+                                    android:textColor="#8fa9c4"
+                                    android:textSize="40dp"
+                                    android:layout_marginLeft="12dp">
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--                            AUTOS POR VENCER PERIODO DE REVISION-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvAutoPorVencer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="51"
+                                android:textSize="24dp"
+                                android:textColor="#F3CC59"
+                                android:textStyle="bold|italic"></TextView>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#c3cfdc"
+                                android:textStyle="bold"
+                                android:text="Por Vencer">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <!--                        DIVIDER-->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="|"
+                                    android:textColor="#8fa9c4"
+                                    android:textSize="40dp"
+                                    android:layout_marginLeft="12dp">
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <!--                        AUTOS CON EXCEPCION DE ENTRADA-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvAutoConExcepcion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="139"
+                                android:textSize="24dp"
+                                android:textColor="#d11b0b"
+                                android:textStyle="bold|italic"></TextView>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#c3cfdc"
+                                android:textStyle="bold"
+                                android:text="Vencidos">
+                            </TextView>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Detalle de Auto"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimaryDark">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHASIS:"
+            android:textColor="@color/colorPrimaryDark"></TextView>
+
+        <TextView
+            android:id="@+id/tvChasis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text=""
+            android:textSize="20dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLIENTE:"
+            android:textColor="@color/colorPrimaryDark"></TextView>
+
+        <TextView
+            android:id="@+id/tvCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="REVISIÓN"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cbAlfombra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carrocería" />
+
+            <CheckBox
+                android:id="@+id/cbHerramientas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Herramientas" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cbLlaves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Llaves" />
+
+            <CheckBox
+                android:id="@+id/cbNeumatico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Neumático Repuesto" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbNOExcepcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIN EXCEPCIÓN" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="|"
+                android:textSize="18dp">
+
+            </TextView>
+            <RadioButton
+                android:id="@+id/rbSIExcepcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDanger"
+                android:textStyle="bold"
+                android:layout_marginLeft="4dp"
+                android:text="CON EXCEPCIÓN" />
+
+
+
+        </RadioGroup>
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_marginTop="2dp"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content">-->
+
+        <!--        <RadioButton-->
+        <!--            android:id="@+id/rbNOExcepcion"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="SIN EXCEPCIÓN" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="8dp"-->
+        <!--            android:text="|"-->
+        <!--            android:textSize="18dp">-->
+
+        <!--        </TextView>-->
+
+        <!--        <RadioButton-->
+        <!--            android:id="@+id/rbSIExcepcion"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@color/colorDanger"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:layout_marginLeft="4dp"-->
+        <!--            android:text="CON EXCEPCIÓN" />-->
+
+
+        <!--    </LinearLayout>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:text="REGISTRAR AUTO" />
+        </LinearLayout>
+
+
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textView27"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="2dp"-->
+        <!--        android:text="CHASIS:"-->
+        <!--        android:textColor="@color/colorPrimaryDark"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/guideline6"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/edtBuscar" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/tvChasis2"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="8dp"-->
+        <!--        android:text="3N1CN7AD7ZK170678"-->
+        <!--        android:textColor="@color/colorPrimary"-->
+        <!--        android:textSize="22dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintBottom_toBottomOf="@+id/textView27"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/textView27"-->
+        <!--        app:layout_constraintTop_toTopOf="@+id/textView27" />-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/cbRuedaRepuesto4"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="14dp"-->
+        <!--        android:text="Alfombras"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/textView27"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textView27" />-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/cbLlaves"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:text="Llaves"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/cbRuedaRepuesto4"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/cbRuedaRepuesto4" />-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/cbHerramientas"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="30dp"-->
+        <!--        android:text="Herramientas"-->
+        <!--        app:layout_constraintBottom_toBottomOf="@+id/cbRuedaRepuesto4"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/cbRuedaRepuesto4"-->
+        <!--        app:layout_constraintTop_toTopOf="@+id/cbRuedaRepuesto4" />-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/cbRuedaRepuesto"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Rueda de Repuesto"-->
+        <!--        app:layout_constraintBottom_toBottomOf="@+id/cbLlaves"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/cbHerramientas"-->
+        <!--        app:layout_constraintTop_toTopOf="@+id/cbLlaves"-->
+        <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/edtBuscar"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="4dp"-->
+        <!--        android:ems="10"-->
+        <!--        android:hint="Ingrese VIN o Chasis..."-->
+        <!--        android:inputType="textPersonName"-->
+        <!--        app:layout_constraintEnd_toStartOf="@+id/guideline8"-->
+        <!--        app:layout_constraintHorizontal_bias="1.0"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/guideline6"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textView23" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textView16"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="12dp"-->
+        <!--        android:text="@string/Excepciones_titulo"-->
+        <!--        android:textColor="@color/colorPrimaryDark"-->
+        <!--        android:textSize="30sp"-->
+        <!--        app:layout_constraintEnd_toStartOf="@+id/guideline7"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/guideline6"-->
+        <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--    <androidx.constraintlayout.widget.Guideline-->
+        <!--        android:id="@+id/guideline8"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="vertical"-->
+        <!--        app:layout_constraintGuide_end="16dp" />-->
+
+        <!--    <androidx.constraintlayout.widget.Guideline-->
+        <!--        android:id="@+id/guideline6"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="vertical"-->
+        <!--        app:layout_constraintGuide_begin="17dp" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textView23"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="2dp"-->
+        <!--        android:text="@string/tv_Revision_Vehiculos"-->
+        <!--        android:textColor="@color/colorPrimaryDark"-->
+        <!--        android:textSize="18dp"-->
+        <!--        app:layout_constraintEnd_toStartOf="@+id/guideline8"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/guideline6"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/textView16" />-->
+
+        <!--    <Button-->
+        <!--        android:id="@+id/button2"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="16dp"-->
+        <!--        android:backgroundTint="@color/colorPrimary"-->
+        <!--        android:text="Registrar Auto"-->
+        <!--        android:textColor="#FFFFFF"-->
+        <!--        app:layout_constraintEnd_toStartOf="@+id/guideline8"-->
+        <!--        app:layout_constraintHorizontal_bias="1.0"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/guideline6"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/rbSI" />-->
+
+        <!--    <RadioButton-->
+        <!--        android:id="@+id/rbNO"-->
+        <!--        android:layout_width="181dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="SIN EXCEPCIÓN"-->
+        <!--        app:layout_constraintBottom_toBottomOf="@+id/rbSI"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/cbRuedaRepuesto"-->
+        <!--        app:layout_constraintTop_toTopOf="@+id/rbSI" />-->
+
+        <!--    <RadioButton-->
+        <!--        android:id="@+id/rbSI"-->
+        <!--        android:layout_width="152dp"-->
+        <!--        android:layout_height="32dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:text="EXCEPCIÓN"-->
+        <!--        app:layout_constraintStart_toStartOf="@+id/cbLlaves"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/cbLlaves" />-->
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

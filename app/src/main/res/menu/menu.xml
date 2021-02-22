@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:icon="@drawable/ic_search_white_24dp"
+    android:title="Buscar Chasis o Motor"
+    android:id="@+id/buscarAuto"
+    app:showAsAction="always"
+    app:actionViewClass="android.widget.SearchView"
+    />
+
+    <item
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="Salir"
+        android:id="@+id/salir"
+        app:showAsAction="never"
+        />
+
+</menu>
